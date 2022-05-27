@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <title><%= title %></title>
+    <meta charset="UTF-8/" />
+    <!--Boostrap version 4-->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+    />
+  </head>
+  <body>
+    <style>
+      p.parrafo {
+        background-color: black;
+        color: aquamarine;
+        text-align: justify;
+        font-size: 33px;
+        margin-left: auto;
+        margin-right: 10px;
+      }
+
+      /*menu*/
+
+      #header ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+      }
+
+      #header ul li {
+        background-color: bisque;
+      }
+      /*Menú desplegable*/
+
+      #header ul {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        padding: 0;
+      }
+
+      #header ul li {
+        float: none;
+        width: 150px;
+      }
+
+      #header ul ul a {
+        line-height: 120%;
+        padding: 10px 15px;
+      }
+
+      #header ul li:hover > ul {
+        display: block;
+      }
+
+      #header ul a {
+        display: block;
+        color: #fff;
+        text-decoration: none;
+        font-weight: 400;
+        font-size: 15px;
+        padding: 10px;
+        font-family: "HelveticaNeue", "Helvetica Neue", Helvetica, Arial,
+          sans-serif;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+      }
+
+      /* items del menu */
+
+      #header ul li {
+        position: relative;
+        float: left;
+        margin: 0;
+        padding: 0;
+      }
+
+      /* efecto al pasar el ratón por los items del menu */
+
+      #header ul li:hover {
+        background: #5b78a7;
+      }
+
+      .footer {
+        background-color: #000;
+        color: rgb(75, 103, 217);
+        margin-top: 580px;
+        block-size: 0%;
+      }
+    </style>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#"><%= title %></a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Link</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  id="navbarDropdown"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Dropdown
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><hr class="dropdown-divider" /></li>
+                  <li>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link disabled">Disabled</a>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input
+                class="form-control me-2"
+                type="search"
+                placeholder="Search"
+                aria-label="Search"
+              />
+              <button class="btn btn-outline-success" type="submit">
+                Search
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <h1>ver <%= 5 +5 %></h1>
+
+    <p class="parrafo">
+      Además, dispondremos nuestros enlaces principales de izquierda a derecha
+      del menú, para esto, los convertiremos en bloques, le daremos un ancho
+      mínimo de 100px que sumados a los padding de 10px del lado izquierdo y
+      10px del lado derecho dan un total de 120px.
+    </p>
+
+    <script>
+      <p>me voy de pachanga</p>;
+    </script>
+
+    <footer>
+      <div class="footer">
+        <ul>
+          <li>hola</li>
+          <li>Conóceme</li>
+        </ul>
+      </div>
+    </footer>
+  </body>
+</html>
